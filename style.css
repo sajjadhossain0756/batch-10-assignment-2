@@ -1,0 +1,35 @@
+/* google font css import link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Love+Light&display=swap');
+
+.love-light-font {
+    font-family: "Love Light", cursive;
+  }
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+}  
+/* universal styles here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.link-style{
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+}
+
+
+/* responsive design for mobile device */
+@media screen and (max-width:576px) {
+    
+}
+
+/* responsive design for medium device or tablet */
+@media screen and (max-width:576px) {
+    
+}
+
+  
