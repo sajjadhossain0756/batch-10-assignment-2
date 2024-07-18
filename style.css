@@ -139,6 +139,60 @@ header{
     border: 1px solid white;
     margin-left: 20px;
 }
+/* main section style */
+main{
+    background-color: #000000;
+    color: white;
+}
+/* change-habit section start here */
+.change-habit-section{
+    padding: 40px 120px;
+    margin-top: -5px;
+}
+.change-habit-content{
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+.change-habit-content h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+.change-habit-content p{
+    margin: 20px 0px;
+    color: var(--gray-color);
+}
+.change-habit-cards{
+    gap: 20px;
+    margin: 60px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.change-habit-card{
+    text-align: center;
+    max-width: 230px;
+    flex-direction: column;
+    align-items: center;
+}
+.change-habit-card .card-image{
+    height: 180px;
+    max-width: 180px;
+}
+.change-habit-card .card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.change-habit-card .card-title{
+    margin: 30px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.change-habit-card .card-description{
+    color: var(--gray-color);
+    padding: 0px 10px;
+}
+
 
 
 /* responsive design for mobile device */
@@ -169,6 +223,16 @@ header{
     .hero-card-one{
         right: 200px;
     }
+    /* change-habit section start here */
+    .change-habit-section{
+       padding: 40px 20px;
+    }
+    .change-habit-content h2{
+        font-size: 35px;
+    }
+    .change-habit-cards{
+        flex-direction: column;
+    }
     
 }
 
@@ -183,6 +247,17 @@ header{
         margin: 30px 50px 0px 50px;
         flex-direction: column;
     }
+    /* change-habit section start here */
+    .change-habit-section{
+        padding: 40px 50px;
+     }
+     .change-habit-cards{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         justify-content: center;
+         align-items: center;
+         margin: 0 auto;
+     }
     
 }
 
