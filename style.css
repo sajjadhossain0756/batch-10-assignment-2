@@ -59,6 +59,13 @@ header{
 }
 .navbar-nav{
     gap: 45px;
+    border: 1px solid rgba(238, 242, 242, 0.5);
+    align-items: center;
+    border-radius: 30px;
+    padding-right: 10px;
+}
+.navbar-nav .active{
+    padding: 5px 20px;
 }
 .nav-item{
     list-style: none;
@@ -231,6 +238,135 @@ main{
     width: 100%;
     height: 100%;
     border-radius: 18px;
+}
+/* training section start here */
+.training-section{
+    margin: 40px 120px;
+}
+.training-content .title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.training-content .description{
+    color: var(--gray-color);
+    margin: 20px 0px;
+    max-width: 600px;
+}
+
+.training-image{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 250px;
+}
+.image-1{
+    background-image: url(./images/exercise1.jpg); 
+    background-color: rgba(21, 229, 244, 0.6);
+}
+.image-2{
+    background-image: url(./images/exercise2.png);
+    background-color: rgba(249, 64, 13, 0.4);
+}
+.image-3{
+    background-image: url(./images/exercise3.png);
+    background-color: rgba(67, 65, 65, 0.2);
+}
+.image-4{
+    background-image: url(./images/exercise4.png);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.image-5{
+    background-image: url(./images/exercise5.jpg);
+    background-color: rgba(225, 225, 29, 0.4);
+}
+.image-6{
+    background-image: url(./images/exercise6.jpg);
+    background-color: rgba(46, 64, 114, 0.8);
+}
+.image-1 p, .image-3 p, .image-5 p, .image-6 p{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    max-width: 190px;
+    opacity: 80%;
+}
+.image-2 p{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    max-width: 190px;
+    opacity: 80%;
+}
+.image-4 p{
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    max-width: 190px;
+    opacity: 80%;
+}
+.row-1{
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 0.7fr;
+}
+.row-2{
+    display: grid;
+    grid-template-columns:  0.9fr 0.5fr 0.6fr;
+}
+/* our-mission section start here */
+.our-mission{
+    margin: 50px 120px;
+}
+.our-mission-content{
+    max-width: 600px;
+    text-align: center;
+    margin: 30px auto;
+}
+.our-mission-content .title{
+    font-size: 45px;
+    font-weight: 700;
+}
+.our-mission-content .description{
+    color: var(--gray-color);
+    margin: 20px 0px;
+}
+.our-mission-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.our-mission-card{
+    max-width: 310px;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+}
+.our-mission-card h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+.our-mission-card p{
+    color: var(--gray-color);
+    padding: 0px 10px;
+}
+.our-mission-card button{
+    background-color: #e6533c;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 20px 10px;
+}
+.mission-card-image{
+    max-width: 310px;
+    height: 210px;
+}
+.mission-card-image img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 /* bmi-calculator section start here */
 .bmi-calculator-content{
@@ -451,6 +587,34 @@ footer p{
         margin: 30px 20px;
         flex-direction: column;
     }
+    /* training section start here */
+    .training-section{
+       margin: 40px 20px;
+    }
+    .row-1{
+        grid-template-columns: 1fr 1fr;
+    }
+    .row-2{
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+    .image-3, .image-6{
+        display: none;
+    }
+    /* our-mission section start here */
+    .our-mission{
+       margin: 30px 20px;
+    }
+    .our-mission-cards{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px 30px;
+    }
+    .our-mission-card{
+        max-width: 350px;
+    }
+    .mission-card-image{
+        max-width: 350px;
+        height: 220px;
+    }
     /* bmi-calculator section start here */
     .bmi-calculator-content{
         margin: 20px;
@@ -468,6 +632,9 @@ footer p{
         justify-content: center;
         align-items: center;
         padding: 20px 35px;
+    }
+    .our-team-cards .card-1, .our-team-cards .card-4{
+        display: none;
     }
     /* footer section start here */
     footer{
@@ -507,8 +674,12 @@ footer p{
      }
      /* run-an-extra section start here */
     .run-extra-section{
-        margin: 30px 50px;
+        margin: 60px 50px;
     }
+    /* training section start here */
+    .training-section{
+        margin: 40px 50px;
+    } 
     /* bmi-calculator section start here */
     .bmi-calculator-content{
         margin: 50px;
